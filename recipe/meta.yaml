@@ -1,5 +1,5 @@
 {% set name = "eslint" %}
-{% set version = "8.38.0" %}
+{% set version = "8.39.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/eslint/eslint/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 6c314b2624bcc5a4434c9393a914dfcefc529e2b01d3f3465633e44d45233361
+  sha256: c83ad34dffd5a43cd9f216c4a494cfad2f3469b996e0675c824361b2a2911d1b
 
 build:
   number: 0
