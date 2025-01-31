@@ -6,18 +6,17 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/eslint/eslint/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 0f2bf837da4c846518d2a109caa94a6cb406ac6ab0b9620e49fd8b473f5ac306
+  url: https://registry.npmjs.org/eslint/-/eslint-{{ version }}.tgz
+  sha256: a9e854f87ba814572a3967e9a308380a2759d2e0a6a2d571887dba35133705c1
 
 build:
-  number: 0
+  noarch: generic
+  number: 1
 
 requirements:
   build:
     - nodejs
-  host:
-    - nodejs
-    - yarn <2
+    - pnpm-licenses
   run:
     - nodejs
 
@@ -30,9 +29,10 @@ about:
   license: MIT
   license_file:
     - LICENSE
-    - ThirdPartyLicenses.txt
+    - third-party-licenses.txt
   summary: Find and fix problems in your JavaScript code.
 
 extra:
   recipe-maintainers:
+    - danielnachun
     - xhochy
