@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://registry.npmjs.org/eslint/-/eslint-{{ version }}.tgz
-  sha256: a9e854f87ba814572a3967e9a308380a2759d2e0a6a2d571887dba35133705c1
+  sha256: b2c645b692552457f580a1ff72e2b37a303879f8cebcad02129abaf13355fb37
 
 build:
   noarch: generic
