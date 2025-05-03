@@ -1,5 +1,5 @@
 {% set name = "eslint" %}
-{% set version = "9.25.1" %}
+{% set version = "9.26.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://registry.npmjs.org/eslint/-/eslint-{{ version }}.tgz
-  sha256: b07029c0b182403d7a12352356871658b51d70f20d9fcd3b2d04b6e8c447601c
+  sha256: 71c4c10714afa94e0fcf8f32c714c0944e7ed32d4d72beb18caa71d7e8709521
 
 build:
   noarch: generic
