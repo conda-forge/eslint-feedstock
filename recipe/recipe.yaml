@@ -1,17 +1,19 @@
-{% set name = "eslint" %}
-{% set version = "9.39.1" %}
+schema_version: 1
+
+context:
+  version: 9.39.1
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: eslint
+  version: ${{ version }}
 
 source:
-  url: https://registry.npmjs.org/eslint/-/eslint-{{ version }}.tgz
+  url: https://registry.npmjs.org/eslint/-/eslint-${{ version }}.tgz
   sha256: 470c0b8b46a7dd5b0bdc63bf6b4c8793e8521c5350491a9522fa5c9c73bf9218
 
 build:
+  number: 1
   noarch: generic
-  number: 0
 
 requirements:
   build:
@@ -22,17 +24,17 @@ requirements:
   run:
     - nodejs
 
-test:
-  commands:
-    - eslint --help
+tests:
+  - script:
+      - eslint --help
 
 about:
-  home: https://github.com/eslint/eslint
   license: MIT
   license_file:
     - LICENSE
     - third-party-licenses.txt
   summary: Find and fix problems in your JavaScript code.
+  homepage: https://github.com/eslint/eslint
 
 extra:
   recipe-maintainers:
