@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "10.2.0"
+  version: "10.2.1"
 
 package:
   name: eslint
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://registry.npmjs.org/eslint/-/eslint-${{ version }}.tgz
-  sha256: e8ea67857abb364e2147486f645d600a3477d348813534e8945026330f680c8e
+  sha256: 5dbcd55280a0b5706a152afe28baed555492187b228e8e79a6c8cc26beb462cb
 
 build:
   number: 0
